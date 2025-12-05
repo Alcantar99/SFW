@@ -13,10 +13,10 @@
   <!-- Inline CSS for speed — Forest green, black, gold trim -->
   <style>
     :root{
-      --bg:#07110b;       /* near-black forest */
+      --bg:#07110b;
       --panel:#0b1b14;
       --gold:#c7a44a;
-      --green:#114b35;    /* forest green */
+      --green:#114b35;
       --muted:#aeb8b0;
       --max:980px;
       --radius:12px;
@@ -44,9 +44,6 @@
     .muted{color:var(--muted);font-size:14px}
     ul.services{margin:8px 0 0 18px;padding:0;color:var(--muted)}
     .pricebox{background:#eef0e8; color:#08110a; padding:12px;border-radius:8px;border-left:4px solid var(--green); margin-top:8px}
-    .pricebox small{display:block;color:#0b452f}
-    .gallery{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px}
-    .promo{width:100%;height:auto;border-radius:8px;display:block}
     .contact{display:flex;flex-direction:column;gap:10px}
     a.cta{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--gold);color:#06100a;text-decoration:none;font-weight:700}
     a.tel{color:var(--gold);text-decoration:none;font-weight:700}
@@ -91,7 +88,7 @@
     <div class="grid" aria-label="Main content">
       <section class="card" aria-labelledby="services">
         <h2 id="services">Services</h2>
-        <ul class="services" aria-hidden="false">
+        <ul class="services">
           <li>Therapeutic Massage (Swedish, Sports, Deep Tissue, Myofascial)</li>
           <li>Cupping</li>
           <li>Sports Recovery</li>
@@ -101,7 +98,6 @@
         </ul>
 
         <h2 style="margin-top:14px">Service Menu (prices)</h2>
-        <!-- Pricing taken from provided image -->
         <div class="pricebox" aria-label="pricing">
           <strong>Massage Treatments</strong>
           <div style="margin-top:8px">
@@ -133,11 +129,6 @@
 
         <h2 style="margin-top:14px">About</h2>
         <p class="muted">Compassionate, recovery-focused bodywork tailored to athletes, post-op clients and everyday relief. Appointments by phone or email.</p>
-
-        <div class="gallery" aria-hidden="false">
-          <!-- If you add an image file to img/ promo.png, it will display here -->
-          <img class="promo" src="img/15_0.jpg" alt="Service menu visual" loading="lazy" />
-        </div>
       </section>
 
       <aside class="card" aria-labelledby="contact">
