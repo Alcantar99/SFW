@@ -1,73 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Soul Fire Wellness - Massage Therapy, cupping, sports recovery, lymphatic drainage and post-op care in Canyon Lake, CA">
-  <title>Soul Fire Wellness</title>
-  <style>
-    :root{--bg:#f8f8f8;--card:#fff;--accent:#b5533a;--muted:#666}
-    *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:#222;line-height:1.4}
-    header{background:linear-gradient(90deg,#fffaf6,#fff1ec);padding:36px 16px;text-align:center;border-bottom:1px solid #eee}
-    h1{margin:0;color:var(--accent);font-size:1.9rem}
-    .hero-sub{color:var(--muted);margin-top:6px}
-    .container{max-width:960px;margin:20px auto;padding:0 16px}
-    .card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 20px rgba(10,10,10,0.04);margin-bottom:16px}
-    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-    .service h3{margin:0 0 6px 0;color:#1f1f1f}
-    .service p{margin:0;color:var(--muted)}
-    .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;color:var(--muted);font-size:0.95rem}
-    a{color:var(--accent);text-decoration:none}
-    footer{text-align:center;padding:18px;font-size:0.9rem;color:var(--muted)}
-    .contact-list p{margin:6px 0}
-    @media (prefers-reduced-motion:reduce){*{transition:none!important}}
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Soul Fire Wellness | Massage Therapy in Canyon Lake, CA</title>
+    <meta name="description" content="Soul Fire Wellness offers massage therapy, cupping, lymphatic drainage, post-op recovery, and sports recovery inside Wild Blush Suites in Canyon Lake, CA." />
+
+    <!-- SEO & Social -->
+    <meta property="og:title" content="Soul Fire Wellness – Massage Therapy" />
+    <meta property="og:description" content="Massage, cupping, lymphatic drainage, sports recovery, and post-op care in Canyon Lake, CA." />
+    <meta property="og:image" content="/img/Logo.png" />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: #000;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header img {
+            max-width: 260px;
+            margin-bottom: 10px;
+        }
+
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+            color: #d4af37;
+        }
+
+        .section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .about img {
+            width: 350px;
+            border-radius: 10px;
+        }
+
+        .services img {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        .contact-box {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-button {
+            background: #d4af37;
+            color: #000;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #aaa;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .about { text-align: center; }
+            .about img { width: 90%; }
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-    <h1>Soul Fire Wellness</h1>
-    <div class="hero-sub">Massage therapy in Wild Blush Suites — Canyon Lake, CA</div>
-  </header>
 
-  <main class="container">
-    <section class="card" aria-labelledby="services-title">
-      <h2 id="services-title">Services Offered</h2>
-      <div class="services" role="list">
-        <div class="service" role="listitem">
-          <h3>Massage Therapy — 145 minutes</h3>
-          <p>Deep relaxation and therapeutic techniques tailored to your needs.</p>
+    <!-- HEADER -->
+    <header>
+        <img src="/img/Logo.png" alt="Soul Fire Wellness Logo">
+        <h1>Soul Fire Wellness</h1>
+        <p>Canyon Lake, California • Wild Blush Suites</p>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about">
+        <img src="/img/Me.png" alt="Nichole - Massage Therapist" />
+
+        <div>
+            <h2>Meet Your Therapist</h2>
+            <p>
+                Hi, I’m Nichole, a Certified Massage Therapist located in Canyon Lake, CA.  
+                I specialize in sports recovery, medical massage, lymphatic drainage, cupping, and post-op recovery.
+            </p>
         </div>
-        <div class="service" role="listitem">
-          <h3>Cupping</h3>
-          <p>Ancient technique for muscle release and increased circulation.</p>
-        </div>
-        <div class="service" role="listitem">
-          <h3>Sports Recovery</h3>
-          <p>Targeted treatments to speed recovery and improve performance.</p>
-        </div>
-        <div class="service" role="listitem">
-          <h3>Lymphatic Drainage</h3>
-          <p>Gentle work to support detoxification and reduce swelling.</p>
-        </div>
-        <div class="service" role="listitem">
-          <h3>Post-Op Recovery</h3>
-          <p>Specialized protocols to assist healing after surgery.</p>
-        </div>
-      </div>
     </section>
 
-    <section class="card" aria-labelledby="contact-title">
-      <h2 id="contact-title">Contact & Location</h2>
-      <div class="contact-list">
-        <p><strong>Address:</strong> 31682 Railroad Canyon Rd, #9, Canyon Lake, CA 92587</p>
-        <p><strong>Phone:</strong> <a href="tel:9516690968">951-669-0968</a></p>
-        <p><strong>Email:</strong> <a href="mailto:nmushaney@gmail.com">nmushaney@gmail.com</a></p>
-        <p><strong>Hours:</strong> 9 AM – 4 PM Everyday</p>
-      </div>
-      <div class="meta">Located in Wild Blush Suites • Fast-loading, mobile-friendly single page</div>
+    <!-- SERVICES -->
+    <section class="section services">
+        <h2>Services & Pricing</h2>
+        <img src="/img/menu.png" alt="Soul Fire Wellness Service Menu">
     </section>
-  </main>
 
-  <footer>&copy; 2025 Soul Fire Wellness</footer>
+    <!-- CONTACT -->
+    <section class="section">
+        <h2>Book an Appointment</h2>
+
+        <div class="contact-box">
+            <p><strong>Address:</strong> 31682 Railroad Canyon Rd, #9, Canyon Lake, CA 92587</p>
+            <p><strong>Hours:</strong> 9 AM – 4 PM (Daily)</p>
+            <p><strong>Phone:</strong> <a href="tel:9516690968" style="color:#d4af37">951-669-0968</a></p>
+            <p><strong>Email:</strong> <a href="mailto:nmushaney@gmail.com" style="color:#d4af37">nmushaney@gmail.com</a></p>
+
+            <a href="tel:9516690968" class="contact-button">Call Now</a>
+        </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="section">
+        <h2>Find Us</h2>
+        <iframe
+            width="100%"
+            height="350"
+            frameborder="0"
+            style="border:0; border-radius:12px;"
+            src="https://www.google.com/maps?q=31682+Railroad+Canyon+Rd,+Canyon+Lake,+CA+92587&output=embed"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Soul Fire Wellness — All Rights Reserved
+    </footer>
+
 </body>
 </html>
