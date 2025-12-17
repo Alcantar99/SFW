@@ -10,12 +10,13 @@
   <link rel="canonical" href="https://your-domain.example/" />
   <meta name="robots" content="index,follow" />
 
-  <!-- Inline CSS — Forest green, black, gold trim -->
+  <!-- Inline CSS for speed — Forest green, black, gold trim -->
   <style>
     :root{
-      --bg:#07110b;
+      --bg:#07110b;       /* near-black forest */
+      --panel:#0b1b14;
       --gold:#c7a44a;
-      --green:#114b35;
+      --green:#114b35;    /* forest green */
       --muted:#aeb8b0;
       --max:980px;
       --radius:12px;
@@ -43,9 +44,9 @@
     .muted{color:var(--muted);font-size:14px}
     ul.services{margin:8px 0 0 18px;padding:0;color:var(--muted)}
     .pricebox{background:#eef0e8; color:#08110a; padding:12px;border-radius:8px;border-left:4px solid var(--green); margin-top:8px}
-    .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px}
-    @media (max-width:560px){.gallery{grid-template-columns:1fr}}
-    .gallery img{width:100%;height:auto;border-radius:8px;display:block}
+    .pricebox small{display:block;color:#0b452f}
+    .gallery{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px}
+    .promo{width:100%;height:auto;border-radius:8px;display:block}
     .contact{display:flex;flex-direction:column;gap:10px}
     a.cta{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--gold);color:#06100a;text-decoration:none;font-weight:700}
     a.tel{color:var(--gold);text-decoration:none;font-weight:700}
@@ -72,13 +73,6 @@
       "postalCode":"92587",
       "addressCountry":"US"
     },
-    "image":[
-      "images/15_4.png",
-      "images/15_0.jpg",
-      "images/15_2.jpg",
-      "images/15_1.jpg",
-      "images/15_3.jpg"
-    ],
     "openingHours":["Mo-Su 09:00-16:00"],
     "description":"Massage therapy, cupping, sports recovery, lymphatic drainage and post-op care at Wild Blush Suites, Canyon Lake, CA."
   }
@@ -87,10 +81,7 @@
 <body>
   <main class="wrap" role="main" aria-label="Soul Fire Wellness">
     <header>
-      <div class="logo" aria-hidden="true">
-        <!-- logo pulled from repository images/ -->
-        <img src="images/15_4.png" alt="Soul Fire Wellness logo" width="56" height="56" style="display:block;width:56px;height:56px" loading="eager">
-      </div>
+      <div class="logo" aria-hidden="true">SF</div>
       <div>
         <h1>Soul Fire Wellness</h1>
         <div class="subtitle">Licensed Massage Therapist — Wild Blush Suites, Canyon Lake</div>
@@ -100,7 +91,7 @@
     <div class="grid" aria-label="Main content">
       <section class="card" aria-labelledby="services">
         <h2 id="services">Services</h2>
-        <ul class="services">
+        <ul class="services" aria-hidden="false">
           <li>Therapeutic Massage (Swedish, Sports, Deep Tissue, Myofascial)</li>
           <li>Cupping</li>
           <li>Sports Recovery</li>
@@ -110,6 +101,7 @@
         </ul>
 
         <h2 style="margin-top:14px">Service Menu (prices)</h2>
+        <!-- Pricing taken from provided image -->
         <div class="pricebox" aria-label="pricing">
           <strong>Massage Treatments</strong>
           <div style="margin-top:8px">
@@ -120,13 +112,13 @@
           <div style="margin-top:10px">
             <strong>Cupping</strong><br>
             ◦ 15 minutes — <strong>$25</strong><br>
-            ◦ 30 minutes — <strong>$40</strong>
+            ◦ 30 minutes — <strong>$45</strong>
           </div>
 
           <div style="margin-top:10px">
             <strong>Lymphatic Drainage</strong><br>
-            ◦ 60 minutes — <strong>$89</strong><br>
-            ◦ 30 minutes — <strong>$59</strong>
+            ◦ 60 minutes — <strong>$110</strong><br>
+            ◦ 90 minutes — <strong>$155</strong>
           </div>
 
           <div style="margin-top:10px">
@@ -142,13 +134,9 @@
         <h2 style="margin-top:14px">About</h2>
         <p class="muted">Compassionate, recovery-focused bodywork tailored to athletes, post-op clients and everyday relief. Appointments by phone or email.</p>
 
-        <h2 style="margin-top:14px">Gallery</h2>
         <div class="gallery" aria-hidden="false">
-          <!-- images pulled from repository folder "images/" -->
-          <img src="images/15_0.jpg" alt="Now Booking promo" loading="lazy">
-          <img src="images/15_1.jpg" alt="Service menu graphic" loading="lazy">
-          <img src="images/15_2.jpg" alt="Therapist portrait" loading="lazy">
-          <img src="images/15_3.jpg" alt="CBD benefits" loading="lazy">
+          <!-- If you add an image file to img/ promo.png, it will display here -->
+          <img class="promo" src="img/15_0.jpg" alt="Service menu visual" loading="lazy" />
         </div>
       </section>
 
